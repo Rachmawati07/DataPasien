@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff9c4">
+
+    <!-- Ini adalah bagian button untuk menampilkan tombol pada projek Data Pasien
+         - Mempunyai id berupa buttonHome
+         - Tombol ini bertuliskan Home
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <Button
+        android:id="@+id/buttonHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/buttonHome"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textIsi" />
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Data Pasien
+         - Mempunyai id berupa textInformasi
+         - Untuk menampilkan keluaran berupa tulisan Informasi Puskesmas Aisyiyah
+         - Menggunakan font berupa serif-monospace
+         - Mempunyai ukuran teks sebesar 30sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textInformasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/textInformasi"
+        android:textColor="#0C0C0C"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Data Pasien
+         - Mempunyai id berupa textIsi
+         - Untuk menampilkan keluaran berupa tulisan deskripsi singkat puskesmas aisyiyah
+         - Menggunakan font berupa serif-medium
+         - Mempunyai ukuran teks sebesar 16sp
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textIsi"
+        android:layout_width="345dp"
+        android:layout_height="276dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/textInformasiPuskes"
+        android:textAlignment="center"
+        android:textColor="#101010"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInformasi" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageRumputKuning
+         - Gambar yang ditampilkan berupa gambar rumput berwarna kuning
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 102dp dengan lebar 413dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageRumputKuning"
+        android:layout_width="413dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/imageRumputKuning"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHome"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/rumputkuning" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageSakuraKanan
+         - Gambar yang ditampilkan berupa gambar bunga sakura kuning
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 202dp dengan lebar 210dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageSakuraKanan"
+        android:layout_width="210dp"
+        android:layout_height="202dp"
+        android:layout_marginBottom="76dp"
+        android:contentDescription="@string/imageSakuraKanan"
+        app:layout_constraintBottom_toTopOf="@+id/textIsi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rantingsakurakanan" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageBungaKuning
+         - Gambar yang ditampilkan berupa gambar bunga berwarna kuning
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 163dp dengan lebar 202dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageBungaKuning"
+        android:layout_width="163dp"
+        android:layout_height="202dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/imageBungaKuning"
+        app:layout_constraintBottom_toTopOf="@+id/textInformasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bungakuning"
+        tools:ignore="ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

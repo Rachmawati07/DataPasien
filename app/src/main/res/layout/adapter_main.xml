@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp">
+
+    <!-- Bagian ini digunakan untuk membuat tata letak untuk data pasien
+         - Mempunyai id berupa text_title
+         - Mempunyai warna background untuk data pasien berupa biru muda dengan kode warna #40c4ff
+         - Menggunakan font berupa sans-serif-medium
+         - Mempunyai ukuran teks sebesar 14sp
+         - Mempunyai ukuran padding sebesar 12dp
+    -->
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#40c4ff"
+        android:fontFamily="sans-serif-medium"
+        android:padding="12dp"
+        android:textColor="#040303"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/icon_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Data Pasien" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa icon_edit
+         - Gambar yang ditampilkan berupa gambar edit
+         - Gambar berasal dari drawble
+         - Mempunyai warna background kuning dengan kode #ffdc00
+         - Mempunyai tinggi dan lebar berupa wrap_content
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/icon_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/icon_Edit"
+        android:background="#ffdc00"
+        android:padding="10dp"
+        android:src="@drawable/icon_edit"
+        app:layout_constraintEnd_toStartOf="@+id/icon_delete"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa icon_delete
+         - Gambar yang ditampilkan berupa gambar delete
+         - Mempunyai warna background kuning dengan kode #ff2e12
+         - Gambar berasal dari drawble
+         - Mempunyai tinggi dan lebar berupa wrap_content
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/icon_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/icon_Delete"
+        android:background="#ff2e12"
+        android:padding="10dp"
+        android:src="@drawable/icon_delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

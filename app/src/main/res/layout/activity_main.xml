@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c0ffff"
+    tools:context=".MainActivity">
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageSunny
+         - Gambar yang ditampilkan berupa gambar matahari
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 103dp dengan lebar 168dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageSunny"
+        android:layout_width="168dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/imageSunny"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sunny"
+        tools:ignore="ImageContrastCheck" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageHospital
+         - Gambar yang ditampilkan berupa gambar rumah sakit
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 126dp dengan lebar 291dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageHospital"
+        android:layout_width="291dp"
+        android:layout_height="126dp"
+        android:layout_marginBottom="44dp"
+        android:contentDescription="@string/imageHospital"
+        app:layout_constraintBottom_toBottomOf="@+id/imageGrass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+        app:layout_constraintVertical_bias="0.905"
+        app:srcCompat="@drawable/hospitalee" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageGrass
+         - Gambar yang ditampilkan berupa gambar rumput
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 119dp dengan lebar 418dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageGrass"
+        android:layout_width="418dp"
+        android:layout_height="119dp"
+        android:contentDescription="@string/imageGrass"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/grass" />
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Data Pasien
+         - Mempunyai id berupa textLogin
+         - Untuk menampilkan keluaran berupa tulisan Login
+         - Menggunakan font berupa sans-serif-black
+         - Mempunyai ukuran teks sebesar 24sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="208dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/login"
+        android:textColor="#151212"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Ini adalah bagian untuk memasukkan dan mengedit teks yang ditambahkan pada projek Data Pasien
+         - Mempunyai id berupa editTextUsername
+         - Untuk menampilkan keluaran hint berupa tulisan Masukkan Username
+         - Menggunakan input teks berupa textPersonName
+         - Mempunyai ukuran teks sebesar 20sp
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <EditText
+        android:id="@+id/textUsername"
+        android:layout_width="316dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="36dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/masukkan_username"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLogin" />
+
+    <!-- Ini adalah bagian button untuk menampilkan tombol pada projek Data Pasien
+         - Mempunyai id berupa buttonLogin
+         - Tombol ini bertuliskan Login
+         - Mempunyai ukuran teks sebesar 16sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="94dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/button_Login"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPassword"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <!-- Ini adalah bagian untuk memasukkan dan mengedit teks yang ditambahkan pada projek Data Pasien
+         - Mempunyai id berupa editTextPassword
+         - Untuk menampilkan keluaran hint berupa tulisan Masukkan Password
+         - Menggunakan input teks berupa textPassword
+         - Mempunyai ukuran teks sebesar 20sp
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <EditText
+        android:id="@+id/textPassword"
+        android:layout_width="313dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/masukkan_password"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textUsername" />
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Data Pasien
+         - Mempunyai id berupa textPuskes
+         - Untuk menampilkan keluaran berupa tulisan Puskesmas Aisyiyah
+         - Menggunakan font berupa sans-serif-black
+         - Mempunyai ukuran teks sebesar 34sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textPuskes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/textPuskes"
+        android:textColor="#000C37"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageBurung
+         - Gambar yang ditampilkan berupa gambar burung
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 84dp dengan lebar 58dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageBurung"
+        android:layout_width="58dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="4dp"
+        android:contentDescription="@string/imageBurung"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/burunghijau"
+        tools:ignore="ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

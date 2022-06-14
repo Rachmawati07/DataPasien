@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bbdefb"
+    android:padding="20dp"
+    tools:context=".TambahDataActivity">
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Data Pasien
+         - Mempunyai id berupa textTambahData
+         - Untuk menampilkan keluaran berupa tulisan Tambah Data Pasien
+         - Menggunakan font berupa serif-medium
+         - Mempunyai ukuran teks sebesar 24sp
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textTambahData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/textMasukkanData"
+        android:textColor="#020942"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Ini adalah bagian untuk memasukkan dan mengedit teks yang ditambahkan pada projek Data Pasien
+         - Mempunyai id berupa editJudul
+         - Untuk menampilkan keluaran hint berupa tulisan Masukkan Judul
+         - Menggunakan input teks berupa textPersonName
+         - Mempunyai ukuran teks sebesar 12sp
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+         - Mempunyai style tulisan yang berasal dari drawble
+    -->
+    <EditText
+        android:id="@+id/editJudul"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:autofillHints=""
+        android:background="@drawable/edittextstyle"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="@string/editJudul"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTambahData"
+        tools:ignore="LabelFor" />
+
+    <!-- Ini adalah bagian untuk memasukkan dan mengedit teks yang ditambahkan pada projek Data Pasien
+         - Mempunyai id berupa editNama
+         - Untuk menampilkan keluaran hint berupa tulisan Masukkan Nama
+         - Menggunakan input teks berupa textPersonName
+         - Mempunyai ukuran teks sebesar 12sp
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+         - Mempunyai style tulisan yang berasal dari drawble
+    -->
+    <EditText
+        android:id="@+id/editNama"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:autofillHints=""
+        android:background="@drawable/edittextstyle"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="@string/editNama"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editJudul"
+        tools:ignore="LabelFor" />
+
+    <!-- Ini adalah bagian untuk memasukkan dan mengedit teks yang ditambahkan pada projek Data Pasien
+         - Mempunyai id berupa editTTL
+         - Untuk menampilkan keluaran hint berupa tulisan Masukkan Tanggal Lahir
+         - Menggunakan input teks berupa textPersonName
+         - Mempunyai ukuran teks sebesar 12sp
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+         - Mempunyai style tulisan yang berasal dari drawble
+    -->
+    <EditText
+        android:id="@+id/editTTL"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:background="@drawable/edittextstyle"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="@string/editTTL"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNama"
+        tools:ignore="LabelFor" />
+
+    <!-- Ini adalah bagian untuk memasukkan dan mengedit teks yang ditambahkan pada projek Data Pasien
+         - Mempunyai id berupa editAlamat
+         - Untuk menampilkan keluaran hint berupa tulisan Masukkan Alamat
+         - Menggunakan input teks berupa textPersonName
+         - Mempunyai ukuran teks sebesar 12sp
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+         - Mempunyai style tulisan yang berasal dari drawble
+    -->
+    <EditText
+        android:id="@+id/editAlamat"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:background="@drawable/edittextstyle"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="@string/editAlamat"
+        android:inputType="textPersonName"
+        android:textColor="#090909"
+        android:textColorHint="#546E7A"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTTL"
+        tools:ignore="LabelFor" />
+
+    <!-- Ini adalah bagian untuk memasukkan dan mengedit teks yang ditambahkan pada projek Data Pasien
+         - Mempunyai id berupa editJK
+         - Untuk menampilkan keluaran hint berupa tulisan Masukkan Jenis Kelamin
+         - Menggunakan input teks berupa textPersonName
+         - Mempunyai ukuran teks sebesar 12sp
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+         - Mempunyai style tulisan yang berasal dari drawble
+    -->
+    <EditText
+        android:id="@+id/editJK"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:background="@drawable/edittextstyle"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="@string/editJK"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAlamat"
+        tools:ignore="LabelFor" />
+
+    <!-- Ini adalah bagian untuk memasukkan dan mengedit teks yang ditambahkan pada projek Data Pasien
+         - Mempunyai id berupa editRiwayat
+         - Untuk menampilkan keluaran hint berupa tulisan Masukkan Jenis Riwayat Penyakit
+         - Menggunakan input teks berupa textPersonName
+         - Mempunyai ukuran teks sebesar 12sp
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+         - Mempunyai style tulisan yang berasal dari drawble
+    -->
+    <EditText
+        android:id="@+id/editRiwayat"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/edittextstyle"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="@string/editRiwayat"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAllCaps="false"
+        android:textColorHint="#546E7A"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editJK"
+        tools:ignore="LabelFor" />
+
+    <!-- Ini adalah bagian button untuk menampilkan tombol pada projek Data Pasien
+         - Mempunyai id berupa button_save
+         - Tombol ini bertuliskan Save
+         - Mempunyai ukuran teks sebesar 14sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/buttonSave"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editRiwayat" />
+
+    <!-- Ini adalah bagian button untuk menampilkan tombol pada projek Data Pasien
+        - Mempunyai id berupa button_update
+        - Tombol ini bertuliskan Update
+        - Mempunyai ukuran teks sebesar 14sp dan dibold
+        - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="358dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/buttonUpdate"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_save" />
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Data Pasien
+         - Mempunyai id berupa textJudul
+         - Untuk menampilkan keluaran berupa tulisan Judul
+         - Menggunakan font berupa sans-serif-light
+         - Mempunyai ukuran teks sebesar 18sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/textJudulTambahData"
+        android:textColor="#070707"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editJudul"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTambahData" />
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Data Pasien
+         - Mempunyai id berupa textTambahData
+         - Untuk menampilkan keluaran berupa tulisan Nama
+         - Menggunakan font berupa sans-serif-light
+         - Mempunyai ukuran teks sebesar 18sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textNamaTambahData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/textNamaTambahData"
+        android:textColor="#090909"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editNama"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textJudul" />
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Data Pasien
+         - Mempunyai id berupa textTTL
+         - Untuk menampilkan keluaran berupa tulisan Tanggal Lahir
+         - Menggunakan font berupa sans-serif-light
+         - Mempunyai ukuran teks sebesar 18sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textTTL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/textTTLTambahData"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editTTL"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNamaTambahData" />
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Data Pasien
+         - Mempunyai id berupa textAlamat
+         - Untuk menampilkan keluaran berupa tulisan Alamat
+         - Menggunakan font berupa sans-serif-light
+         - Mempunyai ukuran teks sebesar 18sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/textAlamatTambahData"
+        android:textColor="#070707"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editAlamat"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTTL" />
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Data Pasien
+         - Mempunyai id berupa textJKTambahData
+         - Untuk menampilkan keluaran berupa tulisan Jenis Kelamin
+         - Menggunakan font berupa sans-serif-light
+         - Mempunyai ukuran teks sebesar 18sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textJKTambahData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/textJKTambahData"
+        android:textColor="#020202"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editJK"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAlamat" />
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Data Pasien
+         - Mempunyai id berupa textRP
+         - Untuk menampilkan keluaran berupa tulisan Penyakit
+         - Menggunakan font berupa sans-serif-light
+         - Mempunyai ukuran teks sebesar 18sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textRP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/textPenyakit"
+        android:textColor="#101010"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editRiwayat"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textJKTambahData" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageKupuUngu
+         - Gambar yang ditampilkan berupa gambar kupu-kupu berwarna ungu
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 50dp dengan lebar 55dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageKupuUngu"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginBottom="60dp"
+        android:contentDescription="@string/imageKupuUngu"
+        app:layout_constraintBottom_toTopOf="@+id/editJudul"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/kupuungu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f7e5ff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Data Pasien
+         - Mempunyai id berupa textHome
+         - Untuk menampilkan keluaran berupa tulisan HOME
+         - Menggunakan font berupa sans-serif-black
+         - Mempunyai ukuran teks sebesar 34sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/textHome"
+        android:textColor="#121111"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Ini adalah bagian button untuk menampilkan tombol pada projek Data Pasien
+         - Mempunyai id berupa buttonInfor
+         - Tombol ini bertuliskan Informasi Puskesmas
+         - Mempunyai ukuran teks sebesar 20sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <Button
+        android:id="@+id/buttonInfor"
+        android:layout_width="325dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/textInformasiPuskesmas"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHome" />
+
+    <!-- Ini adalah bagian button untuk menampilkan tombol pada projek Data Pasien
+         - Mempunyai id berupa buttonDaftarPasien
+         - Tombol ini bertuliskan Daftar Pasien
+         - Mempunyai ukuran teks sebesar 20sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <Button
+        android:id="@+id/buttonDaftarPasien"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/textDaftarPasien"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTambahData" />
+
+    <!-- Ini adalah bagian button untuk menampilkan tombol pada projek Data Pasien
+         - Mempunyai id berupa buttonProfile
+         - Tombol ini bertuliskan Profile
+         - Mempunyai ukuran teks sebesar 20sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <Button
+        android:id="@+id/buttonProfile"
+        android:layout_width="325dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/textProfile"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDaftarPasien" />
+
+    <!-- Ini adalah bagian button untuk menampilkan tombol pada projek Data Pasien
+         - Mempunyai id berupa buttonTambahData
+         - Tombol ini bertuliskan Tambah Data Pasien
+         - Mempunyai ukuran teks sebesar 20sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <Button
+        android:id="@+id/buttonTambahData"
+        android:layout_width="325dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/textTambahDataPasien"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonInfor" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageGrassTulip
+         - Gambar yang ditampilkan berupa gambar bunga tulip berumput
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 143dp dengan lebar 438dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageGrassTulip"
+        android:layout_width="438dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/imageGrassTulip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonProfile"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/grassstulip"
+        tools:ignore="ImageContrastCheck" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageSakura
+         - Gambar yang ditampilkan berupa gambar bunga Sakura
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 183dp dengan lebar 246dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageSakura"
+        android:layout_width="246dp"
+        android:layout_height="183dp"
+        android:layout_marginEnd="192dp"
+        android:layout_marginBottom="48dp"
+        android:contentDescription="@string/imageSakura"
+        app:layout_constraintBottom_toTopOf="@+id/buttonInfor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/sakuraa" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageKupuPink
+         - Gambar yang ditampilkan berupa gambar kupu-kupu pink
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 103dp dengan lebar 125dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageKupuPink"
+        android:layout_width="125dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="4dp"
+        android:contentDescription="@string/imageKupuPink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kupupink" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

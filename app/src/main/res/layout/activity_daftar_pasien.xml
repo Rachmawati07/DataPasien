@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f9eaff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Ini adalah bagian untuk menampilkan data-data agar bisa digulir
+         - Mempunyai id berupa list_note
+         - Tinggi layoutnya ialah 571dp dengan lebar 324dp
+         - Untuk menyecrooll layar secara vertikal
+         - Berasal dari layout adapter_main
+    -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_note"
+        android:layout_width="324dp"
+        android:layout_height="571dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDaftarPasien"
+        app:layout_constraintVertical_bias="0.319"
+        tools:listitem="@layout/adapter_main" />
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Daftar Pasien
+         - Mempunyai id berupa textDaftarPasien
+         - Untuk menampilkan keluaran berupa tulisan Daftar Pasien
+         - Menggunakan font berupa serif-monospace
+         - Mempunyai ukuran teks sebesar 34sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textDaftarPasien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/textDaftar"
+        android:textColor="#050505"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
