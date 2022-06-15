@@ -49,7 +49,7 @@ class HomeActivity : AppCompatActivity() {
 
         // Untuk memberikan fungsi klik listener pada buttonTambahData agar ketika diklik bisa menjalankan fungsi intentEdit
         binding.buttonTambahData.setOnClickListener {
-            //startActivity
+            //Memulai activity
             intentEdit(0, Constant.TYPE_CREATE)
         }
     }

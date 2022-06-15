@@ -11,7 +11,7 @@
          - Mempunyai id berupa text_title
          - Mempunyai warna background untuk data pasien berupa biru muda dengan kode warna #40c4ff
          - Menggunakan font berupa sans-serif-medium
-         - Mempunyai ukuran teks sebesar 14sp
+         - Mempunyai ukuran teks sebesar 14sp dan dibold
          - Mempunyai ukuran padding sebesar 12dp
     -->
     <TextView
@@ -25,6 +25,7 @@
         android:fontFamily="sans-serif-medium"
         android:padding="12dp"
         android:textColor="#040303"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/icon_edit"

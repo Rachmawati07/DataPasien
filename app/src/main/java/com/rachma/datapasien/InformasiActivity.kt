@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.rachma.datapasien.databinding.ActivityInformasiBinding
+
 // Untuk mendeklarasikan kelas yang bernama InformasiActivity
 // Dan untuk menginisialisasi variabel binding untuk ActivityInformasiBinding
 class InformasiActivity : AppCompatActivity(){

@@ -57,7 +57,7 @@ class DaftarPasienActivity : AppCompatActivity(){
 
     // Untuk mendeklarasikan fungsi yang bernama intentEdit
     fun intentEdit(noteId: Int, intentType: Int){
-        // Untuk menjalankan activity melalui intent dari HomeActivity menuju ke TambahDataActivity
+        // Untuk menjalankan activity melalui intent menuju ke TambahDataActivity
         startActivity(
             Intent(applicationContext, TambahDataActivity::class.java)
                 .putExtra("intent_id", noteId)

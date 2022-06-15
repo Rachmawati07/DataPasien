@@ -84,7 +84,7 @@ class TambahDataActivity : AppCompatActivity(){
     }
 
     // Untuk mendeklarasikan fungsi yang bernama getNote
-    // Yang berfungsi untuk mengabil data yang kita pilih dan menampilkannya ke EditText.
+    // Yang berfungsi untuk mengambil data yang kita pilih dan menampilkannya ke EditText.
     fun getNote(){
         noteId = intent.getIntExtra("intent_id", 0)
         CoroutineScope(Dispatchers.IO).launch {
